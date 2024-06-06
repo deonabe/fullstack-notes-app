@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "notes_frontend/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      },
+      {
+        "src": "notes_backend/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "notes_backend/index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "notes_frontend/build/$1",
+        "continue": true
+      }
+    ]
+  }
+  
