@@ -10,8 +10,13 @@ const requestLogger = (request, response, next) => {
   next()
 }
 
+const corsOptions = {
+  origin: ['https://fullstack-notes-app-kappa.vercel.app', 'http://localhost:3000'], // Add more domains as needed
+  optionsSuccessStatus: 200
+};
+
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(requestLogger)
 app.use(express.static('build'))
 
