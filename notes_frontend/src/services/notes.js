@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = import.meta.env.VITE_API_BASE_URL;
+const baseUrl = import.meta.env.VITE_API_BASE_URL_VERCEL_SETUP;
 
 const getAll = () => {
   const request = axios.get(baseUrl)
