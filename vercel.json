@@ -2,11 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "notes_frontend/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
-        }
+        "src": "notes_frontend/build/*",
+        "use": "@vercel/static"
       },
       {
         "src": "notes_backend/index.js",
