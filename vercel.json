@@ -1,12 +1,12 @@
 {
     "version": 2,
-    "outputDirectory": "build",
+    "outputDirectory": "notes_frontend/build",
     "builds": [
       {
         "src": "notes_frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "build"
+          "distDir": "notes_frontend/build"
         }
       },
       {
@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "build/$1",
+        "dest": "notes_frontend/build/$1",
         "continue": true
       }
     ]
