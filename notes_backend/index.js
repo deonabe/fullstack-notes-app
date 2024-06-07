@@ -10,14 +10,10 @@ const requestLogger = (request, response, next) => {
   next()
 }
 
-const corsOptions = {
-  origin: ['https://fullstack-notes-app-kappa.vercel.app', 'http://localhost:3000'], // Add more domains as needed
-  optionsSuccessStatus: 200
-};
-
 app.use(express.json())
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(requestLogger)
+app.use(express.static('build'));
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
@@ -113,3 +109,5 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
+
+module.exports = app;
