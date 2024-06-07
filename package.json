@@ -3,6 +3,9 @@
         "backend": "cd notes_backend && npm start",
         "frontend": "cd notes_frontend && npm run build",
         "start": "concurrently \"npm run backend\" \"npm run frontend\""
-    }
+    },
+    "devDependencies": {
+        "concurrently": "^1.0.0"
+      }
   }
   
