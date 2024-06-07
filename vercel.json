@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "notes_frontend/build/*",
-        "use": "@vercel/static"
+        "use": "@now/static"
       },
       {
         "src": "notes_backend/index.js",
