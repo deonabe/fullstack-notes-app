@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'https://fullstack-notes-app-backend.vercel.app';
+const baseUrl = 'https://fullstack-notes-app-backend.vercel.app/api/notes';
 
 const getAll = () => {
   const request = axios.get(baseUrl)
