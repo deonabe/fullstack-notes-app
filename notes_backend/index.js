@@ -18,7 +18,6 @@ const corsOptions = {
 app.use(express.json())
 app.use(cors(corsOptions))
 app.use(requestLogger)
-app.use(express.static('build'))
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
