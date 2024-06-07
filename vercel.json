@@ -20,7 +20,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/build/$1",
+        "dest": "notes_frontend/build/$1",
         "continue": true
       }
     ]
