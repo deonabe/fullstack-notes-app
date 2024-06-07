@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     // Configure output directory
-    outDir: 'build',  // Default is 'dist'
+    outDir: 'notes_frontend/build',  // Default is 'dist'
     emptyOutDir: true
   }
 });
