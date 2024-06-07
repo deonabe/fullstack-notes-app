@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "outputDirectory": "notes_frontend/build",
     "builds": [
       {
         "src": "notes_frontend/package.json",

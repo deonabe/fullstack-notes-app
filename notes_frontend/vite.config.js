@@ -7,5 +7,6 @@ export default defineConfig({
   build: {
     // Configure output directory
     outDir: 'build',  // Default is 'dist'
+    emptyOutDir: true
   }
 });
