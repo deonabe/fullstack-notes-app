@@ -6,7 +6,7 @@
         "src": "notes_frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "notes_frontend/build"
+          "distDir": "build"
         }
       },
       {
